@@ -1,0 +1,6 @@
+epochs: 5
+lr: 1e-5
+batch_size: 128
+rl_init_kl_coef: 0.2
+rl_cliprange: 0.2
+num_generations: 4

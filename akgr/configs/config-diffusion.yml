@@ -1,0 +1,13 @@
+'temperature': 0.0
+'top_p': null
+'top_k': null
+'max_new_tokens': null
+'eps': 1e-3
+'steps': 512
+'alg': 'origin'
+'alg_temp': null
+'return_dict_in_generate': True
+'output_history': False
+
+
+       
