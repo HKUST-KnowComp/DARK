@@ -1,17 +1,17 @@
-# CtrlHGen
-This is the code repo for *Controllable Logical Hypothesis Generation for Abductive Reasoning in Knowledge Graphs*
+# DARK
+This is the code repo for *Unifying Deductive and Abductive Reasoning in Knowledge Graphs with Masked Diffusion Model*
 
 # Environment
 
 ```bash
-conda create -n ctrlhgen python=3.9
-conda activate ctrlhgen
+conda create -n dark python=3.9
+conda activate dark
 pip install -r requirements.txt 
 ```
 
 # Training
 
-As described in the paper, you can run the code in the following steps:
+You can run the code in the following steps:
 
 1. Sampling
 2. Supervised training
@@ -25,16 +25,15 @@ bash scripts/sample/sample_full.sh
 
 ## Step 2: Supervised training
 
-1. Without condition
 
 ```bash
-bash scripts/train/wn-g2.sh
+bash scripts/train/db.sh
 ```
 
-2. With condition
+or training with multi-gpu:
 
 ```bash
-bash scripts/cond-train/wn-g2-pattern.sh
+bash scripts/train/db-multi.sh
 ```
 
 
@@ -44,28 +43,10 @@ bash scripts/cond-train/wn-g2-pattern.sh
 Example scripts:
 
 ```bash
-bash scripts/optim/wn-g2.sh
-```
-
-For training with multi-gpu:
-
-```bash
-bash scripts/optim/wn-g2-multi.sh
+bash scripts/optim/db.sh
 ```
 
 
-
-# Evaluation
-
-Example scripts:
-
-```bash
-bash scripts/test/wn-g2.sh
-```
-
-```bash
-bash scripts/optim-test/wn-g2.sh
-```
 
 
 
