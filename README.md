@@ -1,5 +1,7 @@
 # DARK
-This is the code repo for *Unifying Deductive and Abductive Reasoning in Knowledge Graphs with Masked Diffusion Model*
+
+
+This is the official code repository for **Unifying Deductive and Abductive Reasoning in Knowledge Graphs with Masked Diffusion Model** (WWW 2026).
 
 # Environment
 
@@ -24,7 +26,8 @@ bash scripts/sample/sample_full.sh
 ```
 
 ## Step 2: Supervised training
-
+For the first-stage pretraining, set --training_mode unify.
+For the second-stage supervised training for a single reasoning type, set --training_mode sft.
 
 ```bash
 bash scripts/train/db.sh
@@ -53,3 +56,10 @@ bash scripts/optim/db.sh
 # Citation
 
 Welcome to cite our work!
+
+@article{gao2025unifying,
+  title={Unifying Deductive and Abductive Reasoning in Knowledge Graphs with Masked Diffusion Model},
+  author={Gao, Yisen and Bai, Jiaxin and Huang, Yi and Fu, Xingcheng and Sun, Qingyun and Song, Yangqiu},
+  journal={arXiv preprint arXiv:2510.11462},
+  year={2025}
+}
