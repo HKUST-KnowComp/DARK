@@ -27,6 +27,7 @@ bash scripts/sample/sample_full.sh
 
 ## Step 2: Supervised training
 For the first-stage pretraining, set --training_mode unify.
+
 For the second-stage supervised training for a single reasoning type, set --training_mode sft.
 
 ```bash
